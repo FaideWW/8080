@@ -744,7 +744,8 @@ export const DisassembleOp = function(byteBuffer, pc) {
     case 0xea:
       opStr = `JPE    #$${hex([byteBuffer[pc + 2], byteBuffer[pc + 1]], 4)}`;
       opBytes = 3;
-      break; case 0xeb:
+      break;
+    case 0xeb:
       opStr = `XCHG`;
       break;
     case 0xec:
